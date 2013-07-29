@@ -1,26 +1,30 @@
 Embedded Pages
 ==================
 
-The Embedded Pages mashup allows to see the pages you've specified in URL and Template URL custom fields as an additional tab on an entity view, so that you can work with some external pages straight in TargetProcess.  
+The Embedded Pages mashup allows to see the pages by links you've provided in URL and Template URL custom fields as an additional tab on an entity view, so that you can work with some external pages and documents straight in TargetProcess.  
 
-For example, if Google Docs application is used to keep all the documentation, you can create a custom fields "Google Doc" and specify there a link for an appropriate google document. This document will be reflected as a new tab on an entity view.
+For example, if Google Docs application is used to keep documentation related to User Stories, you can create a custom field "Google Doc" and specify there links to appropriate google documents for each User Story. This document will be reflected as a new tab on a User Story view.
 
 ![BoardClassOfServices](https://github.com/TargetProcess/TP3MashupLibrary/raw/master/Board%20Classes%20Of%20Services/BoardClassOfServices.png)
 
 How to activate it:
 
 1. Install the mashup from the TargetProcess Mashups Library
-2. Create UPR or Template URL custom fields in ```Settings -> Processes -> your process -> Custom Fields tab```
-3. Specify which exactly URL or Template URL custom fields you'd like to see as tabs on views in a config of a mashup as it is shown below:
+2. Create URL or Template URL custom fields in ```Settings -> Processes -> your process -> Custom Fields tab```
+3. Change a mashup config (in mashups list) to specify that you'd like to see that custom field as a tab on a User Story view:
 
 ```
+{
 entityTypeName: 'userStory',
 customFieldName: 'Google Doc',
 processName: 'Scrum'
+}
 ```
 
-Now when you pus some URL into the mentioned above custom fields, it will be reflected on a view as a new tab.
+Now when you put a URL into the mentioned above User Story custom field, it will be reflected as a new tab on a User Story view.
 
 __Notes__: 
-1. You'll see a tab even of there is no any value is specified for an ebtity.
-2. Refresh of the screen is required to see the embedded page details. 
+
+1. Refresh of the screen is required to see the embedded page details. 
+2. You can show as tabs as many URL and Template URL custom fields as you want for different processes and entity types.
+3. You'll see an empty tab if there is no any value is specified for an ebtity.
