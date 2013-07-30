@@ -1,4 +1,0 @@
-TP3 After Login
-==================
-
-The TP3 After Login mashup simply redirects people to a new TargetProcess v.3 user interface when they log into TargetProcess. It can be used if you do not want to see TargetProcess2 interface anymore.
