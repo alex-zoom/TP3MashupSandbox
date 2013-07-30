@@ -2,12 +2,14 @@ tau.mashups
     .addModule('EmbeddedPages.config', function() {
         var EmbeddedPagesConfig = {
             tabs: [{
-                entityTypeName: 'userStory',
-                customFieldName: 'Sample URL Custom Field tab for User Story of projects with Scrum process',
+				/*Sample embedded page of the 'CustomPageUrl' Custom Field of a User Story of a Project with the 'Scrum' Process*/
+                entityTypeName: 'UserStory',
+                customFieldName: 'CustomPageUrl',
                 processName: 'Scrum'
             },{
-                entityTypeName: 'bug',
-                customFieldName: 'Sample URL Custom Field tab for Bug of any project'				
+				/*Sample embedded page of the 'CustomPageUrl' Custom Field of a Bug of any Project*/
+                entityTypeName: 'Bug',
+                customFieldName: 'CustomPageUrl'				
             }]
         };
 
