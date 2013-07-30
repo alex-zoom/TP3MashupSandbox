@@ -3,14 +3,14 @@ tau.mashups
     .addDependency('Underscore')
     .addDependency('tp/general/view')
     .addDependency('tp3/mashups/storage')
-    .addDependency('URLCustomFieldTab.config')
-    .addCSS('URLCustomFieldTab.css')
-    .addMashup(function ($, _, generalView, Storage, urlCustomFieldTabConfig) {
-        var URLCustomFieldTab = function () {
-            _.forEach(urlCustomFieldTabConfig.tabs, _.bind(this._addTab, this));
+    .addDependency('EmbeddedPages.config')
+    .addCSS('EmbeddedPages.css')
+    .addMashup(function ($, _, generalView, Storage, EmbeddedPagesConfig) {
+        var EmbeddedPages = function () {
+            _.forEach(EmbeddedPagesConfig.tabs, _.bind(this._addTab, this));
         };
 
-        URLCustomFieldTab.prototype = {
+        EmbeddedPages.prototype = {
             URL_CF_TYPES: {
                 URL: 'url',
                 TEMPLATED_URL: 'templatedurl'
@@ -28,8 +28,8 @@ tau.mashups
                             entityType: ['name']
                          }]
             }],
-            $FRAME_TEMPLATE: '<iframe class="url-custom-field-tab-frame" src="${url}"></iframe>',
-            $EMPTY_TEMPLATE: '<span class="url-custom-field-empty">Nothing to display in the Tab: the value of the \'${customFieldName}\' Custom Field is empty</span>',
+            $FRAME_TEMPLATE: '<iframe class="embedded-pages-tab-frame" src="${url}"></iframe>',
+            $EMPTY_TEMPLATE: '<span class="embedded-pages-tab-empty">Nothing to display in the Tab: the value of the \'${customFieldName}\' Custom Field is empty</span>',
 
             _addTab: function (tabConfig) {
                 generalView.addTab(
@@ -170,6 +170,5 @@ tau.mashups
             }
         };
 
-        new URLCustomFieldTab();
-
+        new EmbeddedPages();
     });

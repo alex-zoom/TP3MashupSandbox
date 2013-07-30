@@ -1,6 +1,6 @@
 tau.mashups
-    .addModule('URLCustomFieldTab.config', function() {
-        var urlCustomFieldTabConfig = {
+    .addModule('EmbeddedPages.config', function() {
+        var EmbeddedPagesConfig = {
             tabs: [{
                 entityTypeName: 'userStory',
                 customFieldName: 'Sample URL Custom Field tab for User Story of projects with Scrum process',
@@ -11,5 +11,5 @@ tau.mashups
             }]
         };
 
-        return urlCustomFieldTabConfig;
+        return EmbeddedPagesConfig;
     });
