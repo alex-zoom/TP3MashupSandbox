@@ -1,5 +1,5 @@
-TP3MashupSandbox
-================
+Targetprocess 3 Mashup Sandbox
+==============================
 
 Here you can upload your own mashups. After verifing they will become available to all Targetprocess users.
 
