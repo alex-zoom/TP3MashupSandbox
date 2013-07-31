@@ -1,0 +1,34 @@
+Board Classes Of Services
+==================
+
+The Board Class of Services mashup will set a color for a card based on Tags, States or Business Values (Priorities). 
+
+For example, all the urgent bugs, user stories or other entity cards marked by the tag "urgent" will be highlighted in red on the boards. In the same fashion, all the entities with the ".net" tag can be highlighted in blue.  
+
+![Board Class Of Services](https://github.com/TargetProcess/TP3MashupLibrary/raw/master/Board%20Classes%20Of%20Services/BoardClassOfServices.png)
+
+How to activate it:
+
+1. Install the mashup from the Targetprocess Mashups Library
+2. Edit the ```this.tagMapping``` section in the mashup code.
+
+```javascript
+    this.tagMapping = {
+            'urgent':'background: #f9d9d1',
+            '.net':'background: #d2e0ef;'
+            };
+```
+
+This section specifies which html colors codes should be used for your Tags, States or Business Values.
+
+For example: 
+
+```'Urgent':'background: #fdfadb'``` will set red color for entities with tag "Urgent"
+
+```'In Progress':'background: #fdfadb'``` will set red color for entities in State "In Progress"
+
+```'Must Have':'background: #fdfadb'``` will set red color for entities with Busines Value "Must Have"
+
+
+
+__Notes__: please always use lower-case letters for States, Priorities and Tags. Otherwise, the mashup won't work.
