@@ -1,6 +1,6 @@
 {
     "ShortDescription": "Try Targeprocess 3",
     "CompatibleTpVersion": {
-        "Minimum": "2.24.0"
+        "Minimum": "2.23.13"
     }
 }
