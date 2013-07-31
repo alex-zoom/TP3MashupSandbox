@@ -5,7 +5,7 @@ This mashup creates a link to Targetprocess 3 from the old Targetprocess 2 user 
 
 As soon as you install it from Targetprocess Mashups Library, you'll see Try Targetprocess 3 button at the right top corner of Targetprocess 2. Click it and you see all your data in Targetprocess 3 new user interface.
 
-![TryTargetprocess3](https://github.com/TargetProcess/TP3MashupSandbox/raw/master/Try%20Targetprocess%203/TryTargetprocess3.png)
+![Try Targetprocess 3](https://github.com/TargetProcess/TP3MashupSandbox/raw/master/Try%20Targetprocess%203/TryTargetprocess3.png)
 
 
 
