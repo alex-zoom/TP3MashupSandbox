@@ -7,7 +7,7 @@ Please find the detailed information about mashups creation on our [development 
 
 Then, when your mashup is ready, please check that a mashup you’ve uploaded has all the required files and a good description, so that people could understand what it does and where they can see it in Targetprocess after installation. A mashup description consists of 2 files in github:
 
-__"Mashup name".json__ file (for example BoardClassOfServices.baseinfo.json). It should contain:
+__"Mashup name".baseinfo.json__ file (for example BoardClassOfServices.baseinfo.json). It should contain:
 
 1. Short mashup description, which will be reflected on a mashup card in the Mashup Library
 2. The version of Targetprocess this mashup can work with (for example, it is available from 2.24.4)
