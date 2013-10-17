@@ -20,7 +20,7 @@ tau.mashups
 			
 			this.includeIdeas = 0; //0 by default
 			this.includeInitialStateOnly = 1; //1 by default
-			this.hourLimits = [0, 2, 18, 24]; //[0, 2, 18, 24] by default
+			this.hourLimits = [0, 1, 18, 24]; //[0, 1, 18, 24] by default
 			this.colors = ['#d8ffa0', '', '#fffdb0', '#ffb090']; //['#d8ffa0', '', '#fffdb0', '#ffb090'] by default
 			this.grayColor = '#e4e4e4'; //'#e4e4e4' by default
 				
